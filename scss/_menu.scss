@@ -1,0 +1,364 @@
+.header {
+    
+   
+
+    &__top {
+        height: 44px;
+        background-color: #000;
+        max-width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+    }
+
+    &__info {
+        display: flex;
+        color: #969696;
+        align-items: center;
+    }
+
+    &__tel-icon {
+        margin-right: 20px;
+    }
+    
+    &__tel  {
+        padding: 0px 10px;
+        border-right: 1px #969696 solid;
+    }
+    &__tel a {
+        text-decoration: none;
+        color: #969696;
+    }
+
+    &__works {
+        padding: 0 10px;
+        border-right: 1px #969696 solid;
+    }
+
+    &__time {
+        padding: 0 10px;
+        
+    }
+
+    &__registration {
+        display: flex;
+        align-items: center;
+        height: 44px;
+    }
+
+    &__icon--registration {
+        
+        align-items: center;
+        
+    }
+    &__icon-img {
+       
+    }
+
+    &__link {
+        color: #969696;
+        margin-left: 20px;
+        text-decoration: none;
+        
+    }
+
+    &__enter {
+        
+    }
+
+    &__link {
+    }
+
+    &__link-enter {
+        
+    }
+
+}
+.container {
+}
+
+
+
+.header {
+    background-color: #0F0F0F;
+    width: 100%;
+    height: 80px;
+    
+    margin: 0 auto;
+
+
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    &__logo {
+    }
+
+    &__nav {
+        font-size: 14px;
+        font-family: 'PT Sans' 'sans-serif';
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 350px;
+       
+        
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        color: #969696;
+       
+        transition: color .1s linear;
+        padding: 31px 20px;
+        transition: background-color .1s linear;
+        
+        
+    }
+
+    &__nav-link:hover {
+        color: #fff;
+        background-color: #1F1F1F;
+        
+    }
+
+    &__icon {
+        cursor: pointer;
+    }
+
+}
+.header__toggle {
+    display: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+.active {
+}
+.icon-left {
+    margin-right: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .header__nav {
+        font-size: 12px;
+        margin-left: 280px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .header__nav {
+        font-size: 12px;
+        margin-left: 170px;
+        
+    }
+
+    .header__nav-link {
+        padding: 31px 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    
+    body.lock {
+        overflow: hidden;
+    }
+    
+    
+    
+    .header {
+        height: 45px;
+        position: relative;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 4;
+            background-color: #000;
+        }
+
+        &__logo {
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+        }
+     
+ 
+     &__inner {
+         height: 45px;
+         
+         
+        }
+    
+        &__toggle {
+            display: block;
+            position: relative;
+            width: 31px;
+            height: 20px;
+            z-index: 5;
+            
+        }
+
+
+
+       &__toggle span {
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+            top: 8px;
+            transition: all 0.2s linear;
+       }
+
+       &__toggle::before,
+       &__toggle::after {
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+            transition: all 0.2s linear;
+            
+       }
+
+       &__toggle::before {
+           top: 0;
+       }
+
+       &__toggle::after {
+           bottom: 0;
+       }
+
+       &__toggle.active::before {
+           transform: rotate(45deg);
+           top: 9px;
+       }
+
+       &__toggle.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    &__toggle.active span {
+        transform: scale(0);
+    }
+
+    &__nav {
+       width: 100%;
+       height: 100vh;
+       position: absolute;
+       top: -1826%;
+       right: 0px;
+       background: rgba(12, 12, 3, 0.8);
+       transition: all 0.3s linear;
+       overflow: auto;
+    }
+
+    &__nav.active {
+        top: 45px;
+    }
+
+    &__nav-link {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 15px 10px ;
+        text-align: right;
+        color: #ffffff;
+    }
+
+    &__icon {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -450px;
+        
+        transition: all 0.3s linear;
+       
+    }
+
+
+    &__icon.active {
+        top: 177px;
+    }
+
+    &__works {
+        display: none;
+    }
+
+    &__time {
+        display: none;
+    }
+
+    &__top-inner {
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    &__link {
+       margin-left: 10px;
+    }
+
+    &__tel-icon {
+        margin-right: 10px;
+    }
+
+}   
+
+    .icon-left,
+    .icon-right {
+        
+        display: block;
+        margin: 0;
+        padding: 10px 10px;
+        margin-left: auto;
+    
+    }
+      
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .header {
+       height: &
+
+    &__inner {
+        height: 45px;
+    }
+
+    &__top-inner {
+       height: 35px;
+    }
+
+    &__top {
+        height: 35px;
+    }
+}
+    
+}

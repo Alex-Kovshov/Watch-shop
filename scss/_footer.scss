@@ -1,0 +1,161 @@
+.footer {
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url("../img/brands/footer.png")no-repeat center, #C4C4C4;
+    height: auto;
+    
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        width: 100%;
+    }
+
+    &__aboutshop {
+        width: 33%;
+        max-width: 350px;
+        padding: 0 10px;
+    }
+
+    &__title {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 40px;
+        text-align: left;
+
+    }
+
+    &__text {
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    &__text p {
+        margin-bottom: 37px;
+    }
+
+    &__categories {
+        width: 33%;
+        max-width: 350px;
+        padding: 0 10px;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        padding: 10px 20px;
+        background: #0F0F0F;
+        color: #fff;
+        text-decoration: none;
+        margin: 0px 20px 20px 0;
+        transition: .2s linear;
+    }
+
+    &__link:hover {
+        background: #666060;
+    }
+
+    &__link--wotch {
+    }
+
+    &__link--braslet {
+    }
+
+    &__link--remny {
+    }
+
+    &__link--yvelir {
+    }
+
+    &__link--remember {
+    }
+
+    &__mailing {
+        width: 33%;
+        max-width: 350px;
+        padding: 0 10px;
+    }
+
+    &__button {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &__link--input {
+        border: 0;
+        display: inline-block;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 10px 10px;
+    }
+
+    &__link--button {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 10px 15px;
+
+    }
+        
+     
+}
+.container {
+}
+
+@media screen and (max-width: 950px) {
+    .footer__text p {
+        font-size: 12px;
+    }
+
+    .footer__title {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+ 
+     }
+
+     .footer__categories {
+        margin-bottom: 35px;
+       
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .footer__aboutshop {
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    .footer__categories {
+        width: 100%;
+        padding: 0 5px;
+       
+    }
+
+
+    .footer__mailing {
+        width: 100%;
+        padding: 0 5px;
+        
+    }
+
+    
+}

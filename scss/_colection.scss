@@ -1,0 +1,246 @@
+.colection {
+   width: 100%;
+   height: auto;
+
+    &__title {
+        font-family: 'Playfair Display';
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 93px;
+        
+       
+    }
+
+    &__title::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #fff;
+       margin: 50px auto;
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+        
+        
+    }
+
+    &__new {
+        background: url('../img/colection/new-collection.png') no-repeat left;
+        background-size: cover;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        
+    }
+
+    &__new-title {
+        font-family: 'Playfair Display';
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 350px;
+        text-transform: uppercase;
+        
+    }
+
+    &__new-title::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #fff;
+        margin: 30px auto;
+    }
+}
+.collection {
+
+    &__inner {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        
+
+    }
+
+    &__wotch {
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        width: 50%;
+        
+        
+       }
+}
+.wotch {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 325px;
+    
+    
+    &__name {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Playfair Display';
+        color: #fff;
+        
+        margin-left: 22px;
+    }
+
+    &__price {
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        
+        margin-left: 22px;
+    }
+}
+.img {
+    
+   
+
+    &__wotch  {
+        max-width: 260px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+        
+        
+        
+        
+    }
+
+    &__wotch img {
+        max-width: 215px;
+        height: auto;
+        background: #191B1C;
+        width: 100%;
+        
+    }
+
+}
+.btn {
+    padding: 12px 28px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s linear;
+   
+}
+
+.btn:hover {
+    color: rgb(5, 5, 5);
+    background: rgb(242, 245, 241);
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+    margin: 0 auto;
+}
+.owl-nav.disabled {
+    
+    color: #fff;
+  
+
+}
+.owl-nav.disabled.Next {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-bottom: 30px;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    width: 30px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .collection__inner {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .collection__wotch {
+         width: 100%;
+        }
+
+
+        .colection__new {
+            width: 100%;
+        }
+
+        .colection__new-title {
+            font-size: 18px;
+            margin-top: 180px;
+            
+        }
+
+        .colection__title {
+           font-size: 18px;
+           margin-top: 40px;
+        }
+        .wotch {
+            width: 260px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .colection__title::after {
+           
+            margin: 30px auto;
+        }
+
+}
+
+@media screen and (max-width: 550px) {
+    .colection__new-title::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 1px;
+        
+        margin: 20px auto;
+    }
+
+    .colection__title::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 1px;
+        
+        margin: 30px auto;
+    }
+}
